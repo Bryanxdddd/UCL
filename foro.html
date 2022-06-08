@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title >FORO</title>
+  <link rel="shortcut icon" href="./imgs/THIAGOGGG.gif">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> 
+
+  <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
+	<link rel='stylesheet' href="./estilos/estiloforo.css">  
+   
+    <link href="index.html">
+    <style>
+    </style>
+</head>
+
+<body>
+<!-- SECCION DE LA BARRA DE NAVEGACION -->
+ <header class="header">
+  <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
+      
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="./imgs/logoa.gif" style="width: 100%;">
+      </a>
+  
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="barradenavegacion">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+  
+    <div id="barradenavegacion" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="index.html">
+          INICIO
+        </a>
+        <a class="navbar-item" href="champions.html">
+            HISTORIA DEL TORNEO
+          </a>
+  
+        <a class="navbar-item" href="curiosidades.html">
+          DATOS CURIOSOS
+          </a>
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link is is-arrowless">
+            TEMPORADA 2021 - 2022
+          </a>
+          
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="temporada.html">
+                ACERCA DE LA TEMPORADA
+            </a>
+            <a class="navbar-item"href="tots.html">
+              EQUIPO DEL TORNEO
+            </a>
+            <a class="navbar-item"href="votacion.html">
+                GOL DEL TORNEO
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+</nav>
+</header>
+   
+<!-- PARTE DE INFO -->
+<div class="container-fluid text-justify">
+
+    <video onloadstar="this.muted=true" autoplay loop>
+        <source src="./video/intro.mp4">
+    </video>
+    
+    <section class="form-login">
+        <h5>Bienvenido</h5>
+        <div class="alert alert-warning" role="alert">
+          No olvides llenar correctamente todos los espacios del formulario
+        </div>
+        <form action="registro.php" method="POST">
+        <input class="controls" type="text" name="email" value="" placeholder="Correo Electronico">
+        <input class="controls" type="text" name="nombre" value="" placeholder="Nombre">
+        <input class="controls" type="password" name="pass" value="" placeholder="Contraseña">
+        <input class="buttons" type="submit" name="" value="Registrar">
+
+        <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
+        <div class="g-recaptcha" data-sitekey="6LfeOzkgAAAAABx8CGOEv-v4w5F1mRykDYkR3Lo2"></div>
+      </form>
+        
+
+</div>
+
+
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div>
+                <figure>
+                    <h1>DONDE NOS UBICAMOS</h1> <br>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3760.702971038841!2d-99.12871458533556!3d19.511410943212294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f9c228b343cf%3A0x2f403a140132e3e7!2sUPIITA%20-%20Unidad%20Profesional%20Interdisciplinaria%20en%20Ingenier%C3%ADa%20y%20Tecnolog%C3%ADas%20Avanzadas%20IPN!5e0!3m2!1ses-419!2smx!4v1654489399534!5m2!1ses-419!2smx"
+                     width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </figure>
+            </div>
+            <div>
+                <h1>SOBRE NOSOTROS</h1> <br>
+                <p>ESTUDIANTE DE INGENIERIA WEB DEL INTITUTO POLITECNICO NACIONAL</p>
+              <p>DE LA UNIDAD PROFESIONAL INTERDISCIPLINARIA EN INGENIERIA Y TECNOLOGIAS AVANZADASA</p>
+            </div>
+            <div>
+                <h2>SIGUENOS</h2> <br>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/profile.php?id=100079202297110" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/bry_lc/?hl=es-la" class="fa fa-instagram"></a>
+                    <a href="https://twitter.com/BraintsV" class="fa fa-twitter"></a>
+                    <a href="https://www.youtube.com/channel/UCoIsExk94eMXMDtQmf_vtfw/videosS" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>BRYAN LC</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+// Get all "navbar-burger" elements
+const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+// Add a click event on each of them
+$navbarBurgers.forEach( el => {
+  el.addEventListener('click', () => {
+
+    // Get the target from the "data-target" attribute
+    const target = el.dataset.target;
+    const $target = document.getElementById(target);
+
+    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+    el.classList.toggle('is-active');
+    $target.classList.toggle('is-active');
+
+  });
+});
+});
+  </script> 
+</body> 
+</html>

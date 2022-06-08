@@ -1,0 +1,73 @@
+header
+    {
+      width: 100%;
+      height: 20px;
+      padding: 5px;
+      font-family:fantasy;
+      font-style:oblique;
+      font-size: medium;
+      background: url(../imgs/coloreschampions.jpg); 
+      background-size: cover;
+    }
+  .header .navbar{
+      
+      background-color: transparent !important;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      font-family:fantasy;
+      
+    } 
+
+  .content-box 
+    {
+      box-sizing: content-box;
+    }
+  h1
+    {
+      color: white;
+      text-align: center;
+      font-family:fantasy;
+      font-style:oblique;
+     padding: 20px 35px 8px 20px;
+     
+    }
+#Nombre
+{
+
+  color: white;
+  font-family:fantasy;
+  font-style:oblique;
+}
+.main1
+{
+
+  /* background-image: url(../imgs/fondo2.jpg) ; */
+  background-image: url(../imgs/coloreschampions.jpg);
+}
+aside
+{ 
+   background-image: url(../imgs/fallback.webp);
+   /* background: rgb(68, 37, 245);  */
+  color:rgb(253, 253, 253);
+}
+section
+{
+  color: white;
+  font-family:fantasy;
+  font-size:medium;
+  font-style:oblique;
+background-image: url(../imgs/logohis.png);
+}
+body 
+{
+  background-image: url(../imgs/coloreschampions.jpg); 
+  /*background-color:rgb(71, 24, 114);*/
+  color: white;
+}
+.container 
+{
+  margin-top: 3%;
+  
+}
+
